@@ -1,0 +1,79 @@
+// Banner
+.banner-title {
+  font-size: 64px;
+}
+.banner-text {
+  font-size: 24px;
+  max-width: 600px;
+  margin-top: 15px;
+  line-height: 1.5;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.banner-section {
+  padding: 100px 0;
+  @extend %flex;
+  width: 100%;
+  @include max(1600px) {
+    padding: 50px 0;
+  }
+  .banner-logo {
+    margin-bottom: 40px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    background-color: hsl(var(--light));
+    border-radius: 50%;
+  }
+  .cmn--btn {
+    min-width: 180px;
+    justify-content: center;
+  }
+}
+.banner-content-left {
+  width: 49%;
+  text-align: center;
+}
+.banner-content-right {
+  width: 49%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  .cmn--btn {
+    border-radius: 25px 0 0 0;
+  }
+}
+.middle-devider {
+  width: 10px;
+  background-color: hsl(var(--base));
+  position: relative;
+  border-radius: 20px;
+  .dot {
+    position: absolute;
+    left: 0;
+    width: 15px;
+    transform: translateX(-25%);
+    aspect-ratio: 1;
+    background-color: hsl(var(--base));
+    border-radius: 50%;
+  }
+  .dot1 {
+    top: -50px;
+  }
+  .dot2 {
+    top: -100px;
+  }
+  .dot3 {
+    bottom: -50px;
+  }
+  .dot4 {
+    bottom: -100px;
+  }
+  .dot5 {
+    bottom: -150px;
+  }
+}
+// Banner
