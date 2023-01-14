@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+@font-face {
+	font-family: 'Bariol';
+	src: url('bariol.ttf');
+}
+
 
 :root {
 	// Fonts
-	--heading-font: "Poppins", sans-serif;
+	--heading-font: "Bariol", sans-serif;
 	--body-font: "Open Sans", sans-serif;
 
 	//Colors
@@ -16,29 +21,6 @@
 	--base-l: 49%;
 	--base: var(--base-h) var(--base-s) var(--base-l);
 
-	--base-100: var(--base-h) var(--base-s) calc(var(--base-l) + 20%);
-	--base-200: var(--base-h) var(--base-s) calc(var(--base-l) + 15%);
-	--base-300: var(--base-h) var(--base-s) calc(var(--base-l) + 10%);
-	--base-400: var(--base-h) var(--base-s) calc(var(--base-l) + 5%);
-	--base-600: var(--base-h) var(--base-s) calc(var(--base-l) - 8%);
-	--base-700: var(--base-h) var(--base-s) calc(var(--base-l) - 10%);
-	--base-800: var(--base-h) var(--base-s) calc(var(--base-l) - 15%);
-	--base-900: var(--base-h) var(--base-s) calc(var(--base-l) - 20%);
-
-	// Accent Color Shade
-	--accent-h: 260;
-	--accent-s: 92%;
-	--accent-l: 10%;
-	--accent: var(--accent-h) var(--accent-s) var(--accent-l);
-	--accent-50: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 25%);
-	--accent-100: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 20%);
-	--accent-200: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 15%);
-	--accent-300: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 10%);
-	--accent-400: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%);
-	--accent-600: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 5%);
-	--accent-700: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 10%);
-	--accent-800: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 15%);
-	--accent-900: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 20%);
 
 	// Light Color Shade
 	--light-h: 148;
@@ -56,12 +38,5 @@
 	--light-900: var(--light-h) var(--light-s) calc(var(--light-l) - 20%);
 
 	// Fixed Colors
-	--primary: 245 82% 67%;
-	--secondary: 210 7% 56%;
-	--success: 147 67% 47%;
-	--danger: 360 78% 62%;
-	--warning: 29 100% 63%;
-	--info: 200 90% 53%;
-	--dark: 206 70% 11%;
 	--white: 0 0% 100%;
 }

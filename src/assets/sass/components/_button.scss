@@ -33,45 +33,19 @@
 	img {
 		max-width: 22px;
 	}
+  color: hsl(var(--white)) !important;
+  border-color: #208420 ;
+  background-color: #208420;
 	&:hover {
-		color: hsl(var(--white)) !important ;
-		border-color: hsl(var(--base-600)) !important ;
-		background-color: hsl(var(--base-600));
+    background-color: #293756;
+    border-color: #293756;
 	}
 }
-
-$colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)),
-  "success" hsl(var(--success)), "danger" hsl(var(--danger)),
-  "warning" hsl(var(--warning)), "info" var(--info), "white" hsl(var(--white)),
-  "dark" hsl(var(--dark)), "base" hsl(var(--base));
-
-@each $name, $color in $colors {
-  .btn--#{$name} {
-    background-color: $color;
-    border: 2px solid $color;
-    color: hsl(var(--white));
-    &:hover {
-      color: $color;
-    }
-  }
-}
-.btn--white {
-  color: hsl(var(--base));
-}
-
-@each $name, $color in $colors {
-  .btn--outline-#{$name} {
-    background-color: transparent;
-    border: 2px solid $color;
-    color: $color;
-    &:hover {
-      color: hsl(var(--white));
-      border-color: $color;
-      background-color: $color;
-    }
-  }
-}
-.btn--outline-white {
-  color: hsl(var(--body));
-  border: 2px solid hsl(var(--border));
+.btn-style-two {
+  background-color: #293756;
+  border-color: #293756;
+	&:hover {
+    border-color: #208420 ;
+    background-color: #208420;
+	}
 }
