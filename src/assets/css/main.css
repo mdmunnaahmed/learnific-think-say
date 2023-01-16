@@ -298,6 +298,13 @@ h6 > a {
     border-radius: 20px;
 }
 
+@media (max-width: 1600px) {
+    .middle-devider {
+        height: 400px;
+        align-self: center;
+    }
+}
+
 .middle-devider .dot {
     position: absolute;
     left: 0;

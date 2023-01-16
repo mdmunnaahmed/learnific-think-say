@@ -85,6 +85,10 @@
   background-color: #F4B400;
   position: relative;
   border-radius: 20px;
+  @include max(1600px) {
+    height: 400px;
+    align-self: center;
+  }
   .dot {
     position: absolute;
     left: 0;

@@ -25,7 +25,6 @@
 <body>
     <!-- Overlay -->
     <div class="overlay"></div>
-    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
 
 <!-- Banner -->
 <div class="d-flex align-items-center w-100 min-vh-100">
@@ -34,9 +33,9 @@
         <div class="banner-content-left">
             <img src="assets/images/circle-logo-light-blue.png" alt="logo" class="banner-logo">
             <h1 class="banner-title">Learn at your Leisure <sup>TM</sup></h1>
-            <p class="banner-text">LEARNIFIC advocate for the betterment of educating based on the diverse learning styles.</p>
+            <p class="banner-text">LEARNIFIC advocates for the betterment of educating based on the diverse learning styles.</p>
             <div class="button-wrapper d-flex flex-wrap justify-content-center mt-3 mt-sm-5" style="gap: 10px 25px">
-                <a href="" class="cmn--btn btn--base"><img src="assets/images/creativity.png" alt=""> Learnific</a>
+                <a href="https://learnific.com/" class="cmn--btn btn--base"><img src="assets/images/creativity.png" alt=""> Learnific</a>
             </div>
         </div>
         <div class="middle-devider">
@@ -44,13 +43,14 @@
             <span class="dot dot2"></span>
             <span class="dot dot3"></span>
             <span class="dot dot4"></span>
+            <span class="dot dot5"></span>
         </div>
         <div class="banner-content-right">
             <img src="assets/images/new-just-icon-question.png" alt="logo" class="banner-logo">
             <h1 class="banner-title">Think and Say <sup>TM</sup></h1>
             <p class="banner-text">THINK & SAY offers commentaries, discussions and interviews, on a variety of topics.</p>
             <div class="button-wrapper d-flex flex-wrap justify-content-center mt-3 mt-sm-5" style="gap: 10px 25px">
-                <a href="" class="cmn--btn btn--base  btn-style-two"><img src="assets/images/creativity.png" alt=""> Think & Say</a>
+                <a href="https://thinkandsay.com/" class="cmn--btn btn--base  btn-style-two"><img src="assets/images/creativity.png" alt=""> Think & Say</a>
             </div>
         </div>
     </div>
