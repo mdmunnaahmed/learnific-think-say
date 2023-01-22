@@ -189,6 +189,16 @@ h6 > a {
     background-color: #208420;
 }
 
+.banner-section-wrapper {
+    min-height: 100vh;
+}
+
+@media (max-width: 991px) {
+    .banner-section-wrapper {
+        height: auto;
+    }
+}
+
 .banner-title {
     font-size: 64px;
     font-weight: 700;
@@ -197,6 +207,18 @@ h6 > a {
 @media (max-width: 1600px) {
     .banner-title {
         font-size: 56px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .banner-title {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-title {
+        font-size: 36px;
     }
 }
 
@@ -219,6 +241,18 @@ h6 > a {
 @media (max-width: 1600px) {
     .banner-text {
         font-size: 22px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .banner-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-text {
+        font-size: 17px;
     }
 }
 
@@ -252,6 +286,18 @@ h6 > a {
     }
 }
 
+@media (max-width: 991px) {
+    .banner-section {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-section {
+        padding: 50px 0;
+    }
+}
+
 .banner-section .banner-logo {
     margin-bottom: 40px;
     width: 250px;
@@ -268,6 +314,14 @@ h6 > a {
     }
 }
 
+@media (max-width: 575px) {
+    .banner-section .banner-logo {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 25px;
+    }
+}
+
 .banner-section .cmn--btn {
     min-width: 180px;
     justify-content: center;
@@ -276,11 +330,26 @@ h6 > a {
 .banner-content-left {
     width: 49%;
     text-align: center;
+    padding-inline: 30px;
+}
+
+@media (max-width: 991px) {
+    .banner-content-left {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-content-left {
+        padding-inline: 15px;
+    }
 }
 
 .banner-content-right {
     width: 49%;
     text-align: center;
+    padding-inline: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -289,6 +358,19 @@ h6 > a {
 
 .banner-content-right .cmn--btn {
     border-radius: 25px 0 0 0;
+}
+
+@media (max-width: 991px) {
+    .banner-content-right {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-content-right {
+        padding-inline: 15px;
+    }
 }
 
 .middle-devider {
@@ -305,6 +387,31 @@ h6 > a {
     }
 }
 
+@media (max-width: 1199px) {
+    .middle-devider {
+        height: 350px;
+        align-self: center;
+        width: 8px;
+    }
+}
+
+@media (max-width: 991px) {
+    .middle-devider {
+        max-width: 400px;
+        width: 100%;
+        height: 5px;
+        justify-content: center;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .middle-devider {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
 .middle-devider .dot {
     position: absolute;
     left: 0;
@@ -315,14 +422,53 @@ h6 > a {
     border-radius: 50%;
 }
 
+@media (max-width: 1199px) {
+    .middle-devider .dot {
+        width: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .middle-devider .dot {
+        top: 0;
+        transform: translateY(-20%);
+    }
+}
+
 .middle-devider .dot1 {
     top: -50px;
     background-color: #DB4437;
 }
 
+@media (max-width: 991px) {
+    .middle-devider .dot1 {
+        top: 0;
+        left: -50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .middle-devider .dot1 {
+        left: -30px;
+    }
+}
+
 .middle-devider .dot2 {
-    background-color: #4285F4;
     top: -100px;
+    background-color: #4285F4;
+}
+
+@media (max-width: 991px) {
+    .middle-devider .dot2 {
+        top: 0;
+        left: -100px;
+    }
+}
+
+@media (max-width: 575px) {
+    .middle-devider .dot2 {
+        left: -60px;
+    }
 }
 
 .middle-devider .dot3 {
@@ -330,9 +476,37 @@ h6 > a {
     background-color: #0F9D58;
 }
 
+@media (max-width: 991px) {
+    .middle-devider .dot3 {
+        top: 0;
+        left: auto;
+        right: -50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .middle-devider .dot3 {
+        right: -30px;
+    }
+}
+
 .middle-devider .dot4 {
     bottom: -100px;
     background-color: #4285F4;
+}
+
+@media (max-width: 991px) {
+    .middle-devider .dot4 {
+        top: 0;
+        left: auto;
+        right: -100px;
+    }
+}
+
+@media (max-width: 575px) {
+    .middle-devider .dot4 {
+        right: -60px;
+    }
 }
 
 .middle-devider .dot5 {

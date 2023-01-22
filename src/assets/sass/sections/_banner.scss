@@ -1,9 +1,21 @@
 // Banner
+.banner-section-wrapper {
+  min-height: 100vh;
+  @include breakpoint(max-lg) {
+    height: auto;
+  }
+}
 .banner-title {
   font-size: 64px;
   font-weight: 700;
   @include max(1600px) {
     font-size: 56px;
+  }
+  @include breakpoint(max-xl) {
+    font-size: 46px;
+  }
+  @include breakpoint(max-sm) {
+    font-size: 36px;
   }
   sup {
     color: #678;
@@ -21,6 +33,12 @@
   margin-inline: auto;
   @include max(1600px) {
     font-size: 22px;
+  }
+  @include breakpoint(max-xl) {
+    font-size: 18px;
+  }
+  @include breakpoint(max-sm) {
+    font-size: 17px;
   }
   sup {
     font-size: 15px;
@@ -48,6 +66,12 @@
   @include max(1600px) {
     padding: 50px 0;
   }
+  @include breakpoint(max-lg) {
+    padding: 100px 0;
+  }
+  @include breakpoint(max-sm) {
+    padding: 50px 0;
+  }
   .banner-logo {
     margin-bottom: 40px;
     width: 250px;
@@ -59,6 +83,11 @@
       width: 200px;
       height: 200px;
     }
+    @include breakpoint(max-sm) {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 25px;
+    }
   }
   .cmn--btn {
     min-width: 180px;
@@ -68,16 +97,32 @@
 .banner-content-left {
   width: 49%;
   text-align: center;
+  padding-inline: 30px;
+  @include breakpoint(max-lg) {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  @include breakpoint(max-sm) {
+    padding-inline: 15px;
+  }
 }
 .banner-content-right {
   width: 49%;
   text-align: center;
+  padding-inline: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   .cmn--btn {
     border-radius: 25px 0 0 0;
+  }
+  @include breakpoint(max-lg) {
+    width: 100%;
+    padding-top: 50px;
+  }
+  @include breakpoint(max-sm) {
+    padding-inline: 15px;
   }
 }
 .middle-devider {
@@ -89,6 +134,22 @@
     height: 400px;
     align-self: center;
   }
+  @include breakpoint(max-xl) {
+    height: 350px;
+    align-self: center;
+    width: 8px;
+  }
+  @include breakpoint(max-lg) {
+    max-width: 400px;
+    width: 100%;
+    height: 5px;
+    justify-content: center;
+    margin-inline: auto;
+  }
+  @include breakpoint(max-sm) {
+    max-width: 200px;
+    width: 100%;
+  }
   .dot {
     position: absolute;
     left: 0;
@@ -97,22 +158,59 @@
     aspect-ratio: 1;
     background-color: hsl(var(--base));
     border-radius: 50%;
+    @include breakpoint(max-xl) {
+      width: 12px;
+    }
+    @include breakpoint(max-lg) {
+      top: 0;
+      transform: translateY(-20%);
+    }
   }
   .dot1 {
     top: -50px;
     background-color: #DB4437;
+    @include breakpoint(max-lg) {
+      top: 0;
+      left: -50px;
+    }
+    @include breakpoint(max-sm) {
+      left: -30px;
+    }
   }
   .dot2 {
-    background-color: #4285F4;
     top: -100px;
+    background-color: #4285F4;
+    @include breakpoint(max-lg) {
+      top: 0;
+      left: -100px;
+    }
+    @include breakpoint(max-sm) {
+      left: -60px;
+    }
   }
   .dot3 {
     bottom: -50px;
     background-color: #0F9D58;
+    @include breakpoint(max-lg) {
+      top: 0;
+      left: auto;
+      right: -50px;
+    }
+    @include breakpoint(max-sm) {
+      right: -30px;
+    }
   }
   .dot4 {
     bottom: -100px;
     background-color: #4285F4;
+    @include breakpoint(max-lg) {
+      top: 0;
+      left: auto;
+      right: -100px;
+    }
+    @include breakpoint(max-sm) {
+      right: -60px;
+    }
   }
   .dot5 {
     bottom: -150px;
